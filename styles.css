@@ -1,0 +1,35 @@
+@font-face{font-family:"AlexMozHub Sans";src:url("fonts/lato-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"AlexMozHub Sans";src:url("fonts/lato-semibold.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url("fonts/cormorant-garamond.woff2") format("woff2");font-weight:300 700;font-style:normal;font-display:swap}
+:root{--navy:#050b18;--panel:#0e1726;--gold:#c9a45a;--ivory:#f3e8d0;--muted:#b7b6b2;--line:rgba(201,164,90,.24)}
+*{box-sizing:border-box}
+html{scroll-padding-top:2rem}
+body{margin:0;min-width:280px;min-height:100svh;color:var(--ivory);background:radial-gradient(ellipse at 80% 0%,#111c30 0%,transparent 58%),var(--navy);font-family:"AlexMozHub Sans","Segoe UI",sans-serif;font-size:16px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--ivory);outline-offset:5px}
+.skip{position:absolute;left:1rem;top:-8rem;padding:.7rem 1rem;background:var(--ivory);color:var(--navy);z-index:2}
+.skip:focus{top:1rem}
+.hub{max-width:760px;margin:0 auto;padding:64px 32px 24px}
+.identity{padding-bottom:40px}
+.wordmark{margin:0;color:var(--gold);font-size:15px;letter-spacing:.15em}
+.identity-rule{display:block;width:42px;height:1px;margin:28px 0;background:var(--gold)}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(36px,5.1vw,49px);line-height:1.16;letter-spacing:-.025em;margin:0 0 18px;overflow-wrap:normal}
+.profession{white-space:nowrap;font-size:.65em;letter-spacing:0}
+.descriptor{max-width:480px;color:var(--muted);font-size:18px;line-height:1.5;margin:0 0 32px;text-wrap:pretty}
+.consultation{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:64px;padding:17px 24px;border:1px solid var(--gold);border-radius:12px;background:linear-gradient(115deg,rgba(201,164,90,.12),rgba(201,164,90,.035));font-size:17px;font-weight:600;line-height:1.4}
+.consultation>span:last-child{color:var(--gold);font-size:23px}
+.consultation:hover{background:rgba(201,164,90,.18)}
+.cta-note{color:var(--muted);font-size:12px;margin:12px 0 0}
+.section-heading{display:flex;align-items:center;gap:22px;margin-bottom:20px}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:29px;line-height:1.25;font-weight:500;margin:0;white-space:nowrap}
+.heading-rule{height:1px;background:var(--line);flex:1}
+.platform-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.platform-grid a{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:92px;padding:18px 42px 18px 20px;border:1px solid var(--line);border-radius:10px;background:rgba(14,23,38,.72)}
+.platform-grid a:hover{border-color:var(--gold);background:var(--panel)}
+.platform-name{font-size:17px;font-weight:600;line-height:1.4}
+.platform-handle{color:var(--muted);font-size:13px;line-height:1.5;overflow-wrap:anywhere;margin-top:5px}
+.arrow{position:absolute;right:19px;top:20px;font-size:19px;color:var(--gold)}
+footer{display:flex;justify-content:space-between;gap:16px;margin-top:36px;padding-top:20px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);letter-spacing:.025em}
+@media(max-width:520px){.hub{padding:38px 24px 22px}.identity{padding-bottom:32px}.identity-rule{margin:24px 0}h1{max-width:360px;line-height:1.12}.profession{display:block;margin-top:10px;font-size:.56em}.descriptor{font-size:16px;max-width:300px;margin-bottom:28px}.consultation{padding:16px 18px;gap:16px;font-size:16px;min-height:72px}.platform-grid{grid-template-columns:minmax(0,1fr);gap:10px}.platform-grid a{min-height:76px;padding:14px 42px 14px 18px}.platform-name{font-size:16px}.platform-handle{font-size:12px;margin-top:3px}.arrow{top:19px}.section-heading{gap:16px}h2{font-size:27px}footer{margin-top:28px;font-size:10px}}
+@media(prefers-contrast:more){.platform-grid a{border-color:var(--gold)}.platform-handle,.descriptor,.cta-note,footer{color:var(--ivory)}}
+@media(forced-colors:active){.consultation,.platform-grid a{border:1px solid ButtonText}}
